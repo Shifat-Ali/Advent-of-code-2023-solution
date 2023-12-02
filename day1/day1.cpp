@@ -33,6 +33,7 @@ int main()
     fprintf(out, "%d. first: %d, last: %d -> %d\n", count, first, last, (first * 10 + last));
     sum += (long long)(first * 10 + last);
     first = last = -1;
-    fclose(file);
     fprintf(out, "Total SUm: %ld\n", sum);
+    fclose(file);
+    fclose(out);
 }
